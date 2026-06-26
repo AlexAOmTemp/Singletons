@@ -1,13 +1,7 @@
 # Singletons
-Небольшая система синглтонов для мелких проектов:
-
-Базовый класс SingletonBase проверяет чтобы был единственный экземпляр синглтона
-
-GlobalBootstrapManager обеспечивает создание глобальных сингтонов не зависимо от стартовой сцены и дает им модификатор DontDestroyOnLoad
-
-Остальные синглтоны остаются локальными и удаляются вместе с текущей сценой
-
-Такой подход имитирует LifeScope из DI
-
-
-В данном проекте нет никакой игровой логики, он оставлен только в качестве примера системы синглтонов.
+A lightweight singleton system for small-scale projects:
+The SingletonBase base class ensures that only a single instance of the singleton exists.
+GlobalBootstrapManager handles the creation of global singletons regardless of the starting scene and applies the DontDestroyOnLoad modifier to them.
+All other singletons remain local and are destroyed along with the current scene.
+This approach mimics a DI (Dependency Injection) LifetimeScope.
+There is no game logic in this project; it serves purely as an example of a singleton system.
